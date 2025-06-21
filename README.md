@@ -374,7 +374,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Developer
 
-**Neel Patel** - [GitHub](https://github.com/Neel194) • [LinkedIn](www.linkedin.com/in/neel-patel-52192a272)
+**Neel Patel** - [GitHub](https://github.com/Neel194) • [LinkedIn](https://www.linkedin.com/in/neel-patel-52192a272)
 
 ### **About This Project**
 
