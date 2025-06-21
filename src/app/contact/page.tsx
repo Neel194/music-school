@@ -66,7 +66,6 @@ function ContactPage() {
     "idle" | "success" | "error"
   >("idle");
   const [errors, setErrors] = useState<FormErrors>({});
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   // Memoized validation function
@@ -162,14 +161,13 @@ function ContactPage() {
 
           // Reset reCAPTCHA
           recaptchaRef.current?.reset();
-          setCaptchaToken(null);
 
           // Auto-hide success message after 5 seconds
           setTimeout(() => setSubmitStatus("idle"), 5000);
         } else {
           throw new Error("Failed to send message");
         }
-      } catch (error: any) {
+      } catch (error: unknown) {
         console.error("Error submitting form:", error);
 
         // Track failed submission
@@ -179,7 +177,9 @@ function ContactPage() {
         setSubmitStatus("error");
         setErrors({
           message:
-            error.message || "An unexpected error occurred. Please try again.",
+            error instanceof Error
+              ? error.message
+              : "An unexpected error occurred. Please try again.",
         });
       } finally {
         setIsSubmitting(false);
@@ -207,7 +207,7 @@ function ContactPage() {
 
   // Memoized reCAPTCHA change handler
   const handleCaptchaChange = useCallback((token: string | null) => {
-    setCaptchaToken(token);
+    // No need to update state as the captchaToken is no longer used
   }, []);
 
   // Memoized computed values
@@ -226,9 +226,9 @@ function ContactPage() {
         </h1>
 
         <p className="text-neutral-500 max-w-lg mx-auto my-2 text-base text-center relative z-10 mb-8">
-          We're here to help you with any questions about our courses, programs,
-          or events. Reach out and let us know how we can assist you in your
-          musical journey.
+          We&apos;re here to help you with any questions about our courses,
+          programs, or events. Reach out and let us know how we can assist you
+          in your musical journey.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
