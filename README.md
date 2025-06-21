@@ -9,7 +9,7 @@
 
 **A modern, full-stack music education platform built with cutting-edge technologies**
 
-[Live Demo](https://your-demo-link.com) • [Report Bug](https://github.com/yourusername/musicnextjs/issues) • [Request Feature](https://github.com/yourusername/musicnextjs/issues)
+[Live Demo](https://scaleup-music.vercel.app/) • [Report Bug](https://github.com/Neel194/music-school/issues) • [Request Feature](https://github.com/Neel194/music-school/issues)
 
 </div>
 
@@ -154,7 +154,7 @@ musicnextjs/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/musicnextjs.git
+   git clone https://github.com/Neel194/music-school.git
    cd musicnextjs
    ```
 
@@ -199,11 +199,10 @@ musicnextjs/
 ### **Available Scripts**
 
 ```bash
-npm run dev          # Start development server
+npm run dev          # Start development server with Turbopack
 npm run build        # Build for production
 npm run start        # Start production server
 npm run lint         # Run ESLint
-npm run type-check   # Run TypeScript checks
 ```
 
 ## 📚 API Documentation
@@ -260,7 +259,13 @@ trackButtonClick("enroll_button", "/courses");
 
 ## 🧪 Testing Strategy
 
-### **Testing Approach**
+### **Current Testing Approach**
+
+- **TypeScript**: 100% type coverage with strict type checking
+- **ESLint**: Comprehensive linting rules for code quality
+- **Manual Testing**: Thorough testing of all user flows and features
+
+### **Planned Testing (Future Development)**
 
 - **Unit Testing**: Component testing with Jest and React Testing Library
 - **Integration Testing**: API route testing
@@ -269,10 +274,9 @@ trackButtonClick("enroll_button", "/courses");
 
 ### **Code Quality**
 
-- **TypeScript**: 100% type coverage
-- **ESLint**: Strict linting rules
-- **Prettier**: Consistent code formatting
-- **Husky**: Pre-commit hooks for quality assurance
+- **TypeScript**: Strict type checking enabled
+- **ESLint**: Comprehensive linting rules
+- **Pre-commit Hooks**: Manual code review process
 
 ## 🚀 Deployment
 
@@ -324,10 +328,10 @@ We welcome contributions! Please follow these steps:
 
 <div align="center">
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/musicnextjs?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/musicnextjs?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/musicnextjs)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/musicnextjs)
+![GitHub stars](https://img.shields.io/github/stars/Neel194/music-school?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Neel194/music-school?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Neel194/music-school)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Neel194/music-school)
 
 </div>
 
@@ -370,7 +374,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Developer
 
-**Neel Patel** - [GitHub](https://github.com/yourusername) • [LinkedIn](https://linkedin.com/in/yourusername) • [Portfolio](https://yourportfolio.com)
+**Neel Patel** - [GitHub](https://github.com/Neel194) • [LinkedIn](www.linkedin.com/in/neel-patel-52192a272)
 
 ### **About This Project**
 
