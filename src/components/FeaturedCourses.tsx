@@ -138,13 +138,6 @@ function FeaturedCourses() {
                     <p className="text-lg font-bold text-black dark:text-white">
                       ${course.price}
                     </p>
-                    <Link
-                      className="mt-2 inline-block w-full bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700 transition-colors"
-                      href={`/courses/${course.slug}`}
-                      onClick={() => handleCourseClick(course)}
-                    >
-                      Learn More
-                    </Link>
                   </div>
                 </div>
               </BackgroundGradient>
